@@ -49,8 +49,10 @@ export default function SignIn() {
                     </Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={() => navigation.navigate("Welcome")}>
-                    <Text>go back</Text>
+                <TouchableOpacity
+                    style={styles.buttonGoBack}
+                    onPress={() => navigation.navigate("Welcome")}>
+                    <Text style={styles.buttonGoBackText}>Go to the home page</Text>
                 </TouchableOpacity>
 
             </Animatable.View>
@@ -112,6 +114,13 @@ const styles = StyleSheet.create({
         alignSelf: "center"
     },
     buttonRegisterText: {
+        color: "#a1a1a1"
+    },
+    buttonGoBack: {
+        marginTop: 14,
+        alignSelf: "center"
+    },
+    buttonGoBackText: {
         color: "#a1a1a1"
     }
 });
