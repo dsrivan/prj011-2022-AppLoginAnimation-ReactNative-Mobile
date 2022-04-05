@@ -2,6 +2,7 @@ import React from "react";
 import {
     View,
     Text,
+    Image,
     StyleSheet,
     TextInput,
     TouchableOpacity
@@ -20,6 +21,11 @@ export default function SignIn() {
                 style={styles.containerHeader}
                 animation="fadeInLeft"
                 delay={500}>
+                <Animatable.Image
+                    style={styles.containerHeaderLogo}
+                    source={require('../../assets/logo.png')}
+                    resizeMode="contain"
+                />
                 <Text style={styles.message}>Welcome!</Text>
             </Animatable.View>
 
@@ -66,9 +72,15 @@ const styles = StyleSheet.create({
         backgroundColor: "#38A69D",
     },
     containerHeader: {
-        marginTop: "14%",
+        marginTop: "5%",
         marginBottom: "8%",
         paddingStart: "5%"
+    },
+    containerHeaderLogo: {
+        width: "50%",
+        alignSelf: "center",
+        marginTop: "0%",
+        marginBottom: "0%"
     },
     message: {
         fontSize: 28,
