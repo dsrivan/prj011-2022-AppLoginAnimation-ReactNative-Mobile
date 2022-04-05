@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "app-login-animation",
+    "slug": "app-login-animation",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "app-login-animation"
+}
