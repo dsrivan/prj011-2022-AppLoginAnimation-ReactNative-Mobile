@@ -28,13 +28,13 @@ export default function Welcome() {
                 animation="fadeInUp"
                 delay={500}
                 style={styles.containerForm}>
-                <Text style={styles.title}>Organize e monitore seus gastos de qualquer lugar</Text>
-                <Text style={styles.text}>Faça o login para começar</Text>
+                <Text style={styles.title}>Organize and track your spending from anywhere</Text>
+                <Text style={styles.text}>Login to get started</Text>
 
                 <TouchableOpacity
                     onPress={() => navigation.navigate('SignIn')}
                     style={styles.button}>
-                    <Text style={styles.buttonText}>Acessar</Text>
+                    <Text style={styles.buttonText}>Login</Text>
                 </TouchableOpacity>
             </Animatable.View>
         </View>
