@@ -26,20 +26,21 @@ export default function SignIn() {
                     source={require('../../assets/logo.png')}
                     resizeMode="contain"
                 />
-                <Text style={styles.message}>Welcome!</Text>
+                <Text style={styles.title}>Welcome!</Text>
+                <Text style={styles.message}>Organize and track your spending </Text>
             </Animatable.View>
 
             <Animatable.View
                 style={styles.containerForm}
                 animation="fadeInUp">
 
-                <Text style={styles.title}>E-mail</Text>
+                <Text style={styles.imputTitle}>E-mail</Text>
                 <TextInput
                     placeholder="Type your e-mail"
                     style={styles.input}
                 />
 
-                <Text style={styles.title}>Password</Text>
+                <Text style={styles.imputTitle}>Password</Text>
                 <TextInput
                     placeholder="Enter your password"
                     style={styles.input}
@@ -82,9 +83,13 @@ const styles = StyleSheet.create({
         marginTop: "0%",
         marginBottom: "0%"
     },
-    message: {
+    title: {
         fontSize: 28,
         fontWeight: "bold",
+        color: "#FFF"
+    },
+    message: {
+        fontSize: 18,
         color: "#FFF"
     },
     containerForm: {
@@ -96,7 +101,7 @@ const styles = StyleSheet.create({
         paddingEnd: "5%"
 
     },
-    title: {
+    imputTitle: {
         fontSize: 20,
         marginTop: 28
     },
