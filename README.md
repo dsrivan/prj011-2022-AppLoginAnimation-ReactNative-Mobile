@@ -10,7 +10,7 @@ _This development is only a study!_
 
 ### Demonstration
 
-> _Image Inspiration_ > ![Demo: 'Online Course School'](src/assets/demo/demo.gif)
+<img style="width: 300px;" src="src/assets/demo/demo.gif">
 
 If you want to leave a comment, contact me!
 _I'll be happy for that._
